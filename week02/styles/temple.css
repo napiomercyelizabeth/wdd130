@@ -50,5 +50,9 @@ ul {
 }
 
 footer {
-    font-size: .9px
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: .9rem;
 }
