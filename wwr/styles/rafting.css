@@ -1,28 +1,32 @@
+/* 1. CSS Variables Setup */
 :root {
     --primary-color: #055a05;
-
+    /* forest green */
     --secondary-color: #f4a261;
-
+    /* warm sand */
     --accent1-color: #264653;
-
+    /* dark slate blue */
     --accent2-color: #e9c46a;
-
+    /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* 2. Universal Box-Model Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 3. Global Typography & Colors */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #fcfcfc;
 }
 
+/* 4. Page Centering & Width Limit */
 header,
 main,
 footer {
@@ -30,12 +34,43 @@ footer {
     margin: 0 auto;
 }
 
+/* 5. Header Styling & Navigation */
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav a {
+    color: var(--accent2-color);
+    /* Uses --accent2-color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 6. Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* 7. Section Styling */
+section {
+    background-color: var(--secondary-color);
+    /* Uses --secondary-color */
+    border-radius: 4px;
+}
+
+/* 8. Basic Spacing Rules */
 nav,
 p,
 section,
@@ -44,10 +79,7 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* 9. Hero Section & Overlays */
 .hero {
     position: relative;
 }
@@ -74,7 +106,8 @@ h1 {
     top: 130px;
     left: 20px;
     width: 780px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 .hero article img {
@@ -83,11 +116,16 @@ h1 {
     margin-left: 10px;
 }
 
+/* 10. Footer Styling & Social Media Links */
 footer {
     background-color: var(--primary-color);
     color: #ffffff;
     padding: 15px;
     text-align: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
