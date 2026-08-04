@@ -197,3 +197,158 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+.company-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.company-details h1 {
+    position: static;
+    transform: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    width: 100%;
+    padding: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.company-details p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.map-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+}
+
+.map-box {
+    width: 100%;
+    height: 380px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.map-box iframe {
+    border: 0;
+}
+
+/* 3. Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-row label,
+.label-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+}
+
+.radio-row {
+    margin-top: 4px;
+}
+
+.radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.radio-options label {
+    font-weight: normal;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.checkbox-row label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+.team-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-section h2 {
+    margin-bottom: 20px;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.employee-grid figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.employee-grid figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--accent1-color);
+    line-height: 1.4;
+}
