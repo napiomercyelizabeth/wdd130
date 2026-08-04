@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page Title -->
     <title>Contact Us | White Water Rafting Company</title>
-    <!-- Meta Description -->
     <meta name="description"
       content="Get in touch with White Water Rafting Company. View our location map, contact details, meet our team, and send us a message.">
     <meta name="author" content="Napio Mercy Elizabeth">
@@ -15,7 +13,6 @@
 
 <body>
 
-    <!-- Header (Identical across pages) -->
     <header>
         <img src="images/logo.jpg" alt="Rafting Company Logo" class="logo">
         <nav>
@@ -29,7 +26,7 @@
     </header>
 
     <main>
-        <!-- 1. Top Centered Company Details (Matches Wireframe Top) -->
+        <!-- 1. Top Centered Company Details -->
         <section class="company-details">
             <h1>White Water Rafting Company</h1>
             <p>123 Main River Street</p>
@@ -38,53 +35,55 @@
             <p>info@whitewater.com</p>
         </section>
 
-        <!-- 2. Two-Column Layout: Embedded Map Left, Form Right (Matches Wireframe Middle) -->
+        <!-- 2. Two-Column Layout: Map & Form -->
         <section class="map-form-container">
+            <!-- Added heading to satisfy Section heading validator rule -->
+            <h2>Find Us & Get in Touch</h2>
 
-            <!-- White Nile Rafting Google Map Embed (No inline border style!) -->
             <div class="map-box">
+                <!-- Fixed width/height attributes to plain numbers for HTML5 validation -->
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.035767226685!2d33.1678248!3d0.4243883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177e7b6863d085d1%3A0xb5b7ad8ca3dfb48!2sWhite%20Nile%20Rafting%20Ltd!5e0!3m2!1sen!2sug!4v1722700000000!5m2!1sen!2sug"
-                  width="100%" height="100%" allowfullscreen="" loading="lazy"
+                  width="600" height="450" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                   title="White Nile Rafting Location Map">
                 </iframe>
             </div>
 
-            <!-- Contact Form -->
             <form action="#" method="post" class="contact-form">
                 <div class="form-row">
                     <label for="username">Name</label>
-                    <input type="text" id="username" name="username" placeholder="Placeholder"
+                    <input type="text" id="username" name="username" placeholder="Your Full Name"
                       required>
                 </div>
 
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Placeholder" required>
+                    <input type="email" id="email" name="email" placeholder="name@example.com"
+                      required>
                 </div>
 
                 <div class="form-row radio-row">
                     <span class="label-title">Message Purpose</span>
                     <div class="radio-options">
-                        <label><input type="radio" id="general" name="purpose" value="general"
-                              checked> General Inquiry</label>
-                        <label><input type="radio" id="reservation" name="purpose"
+                        <label for="general"><input type="radio" id="general" name="purpose"
+                              value="general" checked> General Inquiry</label>
+                        <label for="reservation"><input type="radio" id="reservation" name="purpose"
                               value="reservation"> Reservation Question</label>
-                        <label><input type="radio" id="suggestion" name="purpose"
+                        <label for="suggestion"><input type="radio" id="suggestion" name="purpose"
                               value="suggestion"> Website Suggestion</label>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Type here"
-                      required></textarea>
+                    <textarea id="message" name="message" rows="4"
+                      placeholder="Type your message here..." required></textarea>
                 </div>
 
                 <div class="checkbox-row">
                     <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                 </div>
 
                 <button type="submit">Get in Touch!</button>
@@ -92,27 +91,27 @@
 
         </section>
 
-        <!-- 3. Employee Section (Matches Wireframe Bottom Box) -->
+        <!-- 3. Employee Section -->
         <section class="team-section">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-grid">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Employee Profile">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee1.jpg" alt="Napio Mercy Elizabeth - General Manager">
+                    <figcaption><strong>Napio Mercy Elizabeth</strong><br>General Manager
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Employee Profile">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee2.jpg" alt="Alex Rivers - Lead River Guide">
+                    <figcaption><strong>Alex Rivers</strong><br>Lead River Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.jpg" alt="Employee Profile">
-                    <figcaption>Employee Profile</figcaption>
+                    <img src="images/employee3.jpg" alt="Maria Gomez - Reservations Specialist">
+                    <figcaption><strong>Maria Gomez</strong><br>Reservations Specialist</figcaption>
                 </figure>
             </div>
         </section>
     </main>
 
-    <!-- Footer (Identical across pages) -->
     <footer>
         <p>&copy; 2026 Whitewater Rafting | Napio Mercy Elizabeth</p>
         <nav class="socialmedia">
