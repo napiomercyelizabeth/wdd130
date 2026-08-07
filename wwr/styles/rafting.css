@@ -358,3 +358,148 @@ footer {
     text-align: center;
     margin-bottom: 10px;
 }
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 4px;
+    margin-top: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.newsletter .form-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.home-grid h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.grid-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.trips-cta {
+    text-align: center;
+    padding: 20px;
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.trip-descriptions h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.trip-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 6px;
+}
+
+.trips-table-section {
+    text-align: center;
+}
+
+.trips-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.trips-table-section th,
+.trips-table-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.trips-table-section th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.trips-table-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
